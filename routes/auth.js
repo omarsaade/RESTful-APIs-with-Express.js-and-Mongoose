@@ -1,5 +1,3 @@
-const config = require("config");
-const jwt = require("jsonwebtoken");
 const Joi = require("joi");
 const bcrypt = require("bcrypt");
 const _ = require("lodash");
@@ -17,8 +15,14 @@ router.post("/", async (req, res) => {
   const validPassword = await bcrypt.compare(req.body.password, user.password);
   if (!validPassword) return res.status(400).send("Invalid email or password.");
 
+  const token = user.generateAuthToken();
+
   // before returning a response we have to create a new JWT
-  const token = jwt.sign({ _id: user._id }, config.get("jwtPrivateKey"));
+  ///                       payload:it can be a simple string or an obj
+  // u should not store secret or hardcoded in ur open source here..
+  // u have to store in the environement variable
+  // generate a json web token
+  // const token = jwt.sign({ _id: user._id }, config.get("jwtPrivateKey"));
   // console.log(config.get("jwtPrivateKey"));
   res.send(token);
 });

@@ -1,3 +1,5 @@
+const jwt = require("jsonwebtoken");
+const config = require("config");
 const Joi = require("joi");
 const mongoose = require("mongoose");
 
@@ -22,6 +24,12 @@ const userSchema = new mongoose.Schema({
     maxlength: 1024,
   },
 });
+//userSchema.methods we can add additional key value pair to this object
+//so we can add a key generationAuthToken and a value..el function
+userSchema.methods.generateAuthToken = function () {
+  const token = jwt.sign({ _id: this._id }, config.get("jwtPrivateKey"));
+  return token;
+};
 
 const User = mongoose.model("User", userSchema);
 
@@ -37,3 +45,6 @@ function validateUser(user) {
 
 exports.User = User;
 exports.validate = validateUser;
+
+//https://kb.objectrocket.com/mongo-db/how-to-add-instance-methods-with-mongoose-236
+//https://mongoosejs.com/docs/guide.html#methods

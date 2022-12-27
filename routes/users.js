@@ -1,4 +1,6 @@
 // new route to register a new user
+const jwt = require("jsonwebtoken");
+const config = require("config");
 const bcrypt = require("bcrypt");
 const _ = require("lodash");
 const { User, validate } = require("../models/user");
@@ -14,23 +16,33 @@ router.post("/", async (req, res) => {
 
   if (user) return res.status(400).send("User already Registered");
 
-  user = new User(_.pick(req.body, ["name", "email", "password"]));
+  let picko = _.pick(req.body, ["name", "email", "password"]);
+  user = new User(picko);
+
   const salt = await bcrypt.genSalt(10);
   user.password = await bcrypt.hash(user.password, salt);
 
-  //   user = new User({
-  //     name: req.body.name,
-  //     email: req.body.email,
-  //     password: req.body.password,
-  //   });
-
+  /*
+  u can use joi password complexity for validating a password  
+    user = new User({
+      name: req.body.name,
+      email: req.body.email,
+      password: req.body.password,
+    });
+*/
   await user.save();
   // .pick() btraje3lna new object with those 2 props name and email
   let pick = _.pick(user, ["_id", "name", "email"]);
-  // we are gonna modidied the response of this api endpoint to not returning
+  // we are gonna modified the response of this api endpoint to not returning
   //the password
   // meth1
-  res.send(pick);
+  // res.send(pick);
+  // const token = jwt.sign({ _id: user._id }, config.get("jwtPrivateKey"));
+  const token = user.generateAuthToken();
+  // with res.header we can set a header
+  //         name of the header , value
+  //  Now We set this header and then send this reponse to the client
+  res.header("x-auth-token", token).send(pick);
 
   //meth2
   /*

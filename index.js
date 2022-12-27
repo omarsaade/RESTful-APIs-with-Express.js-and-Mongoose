@@ -13,6 +13,7 @@ const app = express();
 
 if (!config.get("jwtPrivateKey")) {
   console.error("FATAL ERROR: jwtPrivateKey is not defined.");
+  //0 btaane success , 1 and 2 failure
   process.exit(1);
 }
 
