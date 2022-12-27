@@ -1,4 +1,5 @@
 // new route to register a new user
+const auth = require("../middleware/auth");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const bcrypt = require("bcrypt");
@@ -7,6 +8,12 @@ const { User, validate } = require("../models/user");
 const mongoose = require("mongoose");
 const express = require("express");
 const router = express.Router();
+
+//auth yaane authorization
+router.get("/me", auth, async (req, res) => {
+  const user = await User.findById(req.user._id).select("-password");
+  res.send(user);
+});
 
 router.post("/", async (req, res) => {
   const { error } = validate(req.body);
@@ -41,7 +48,7 @@ router.post("/", async (req, res) => {
   const token = user.generateAuthToken();
   // with res.header we can set a header
   //         name of the header , value
-  //  Now We set this header and then send this reponse to the client
+  //  Now We set this header and then send this response to the client
   res.header("x-auth-token", token).send(pick);
 
   //meth2

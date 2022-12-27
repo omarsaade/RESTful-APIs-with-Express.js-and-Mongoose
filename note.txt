@@ -87,7 +87,54 @@ how to move the private key into an environement variable.
 
 npm i config
 
+Storing Secrets in Environment Variables
+
 
 =============================================
 
 
+            video 134
+
+Setting Response Headers
+
+when the user registers we wanna asume there logged
+ in..so there is no need to login each time.
+
+
+   -> return the JWT in an http header
+   w baada lah tethafaz el token bel header
+
+
+finally
+   in our client app...when we register a user we can read this header
+   we can store this web token on the client
+and next time we gonna make an api call well send this to the server
+
+
+========================================================
+
+  video 135
+
+          Encapsulating Logic in Mongoose Models.
+repetition
+
+where should we move this logic too ?
+
+in OOP we have a principle called
+         Information Expert Principle
+That means an object that have enough Information and is an expert
+
+===================================
+
+video 137
+
+Protecting Routes
+
+================================================
+
+video 138
+
+Getting The Current user
+
+
+============================================================
