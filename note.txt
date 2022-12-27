@@ -1,0 +1,93 @@
+
+
+
+1-Authentication: Process of identifying if the user is who the claimed they are
+that's when we login
+so we send our user and password to the server and the server authenticate us
+
+
+2-Authorization: is determining if the user has the right permission 
+to perform the giver operation
+
+so in our vildy application we wanna make sure that only authenticated user or only logged in users
+can perform operations that modify data so if the user is anonymous 
+if they are not logged in...they only read data from this endpoints.
+
+if they want to create a new genre or a new rental ..they have to be authenticated first
+
+
+Registering users
+
+    Register:    POST /api/users   {name  , email , password }
+    Login:       POST /api/logins 
+
+email : {
+    type:String,
+    unique: true
+}
+
+---------------
+
+la hata ma traje3 el password
+video 127
+we are gonna modidied the response of this api endpoint
+
+================
+video 128
+sign up
+we store our password in a plein text..and that's verr very bad.
+
+so lets hash this password
+
+Hashing Passwords
+
+very popular library called bcrypt
+
+npm i bcrypt
+
+=========================================
+
+video 129
+
+Authentication / login
+=================================
+
+video 130 Testing the Authentication
+
+
+=======================================
+video 131
+
+modifing the response and using the json web token
+
+JSON web Tokens
+jwt : is a long string that identifie a user
+its very similar to your driver licence or password
+
+when the user logges in on the server we generate this jwt which is like a driver license
+then we give it to client and then tell them..hey next time you wanna come back here
+and call the api..you need to show your driver license or ur password. this is ur id
+
+
+
+=====================================================================
+video 132
+
+Generating Authentication Tokens
+
+npm i jsonwebtoken
+
+===================================
+
+
+video 133
+
+how to move the private key into an environement variable.
+
+
+npm i config
+
+
+=============================================
+
+
