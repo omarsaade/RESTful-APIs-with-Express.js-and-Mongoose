@@ -124,6 +124,14 @@ in OOP we have a principle called
          Information Expert Principle
 That means an object that have enough Information and is an expert
 
+=======================================
+
+video 136
+
+bas el Authenticated users fion ya3melo tegyir bel data
+
+
+
 ===================================
 
 video 137
@@ -135,6 +143,9 @@ Protecting Routes
 video 138
 
 Getting The Current user
+
+Authentication : validatating the username and password
+authorization: if the user has permission to access a resource or not
 
 
 ============================================================

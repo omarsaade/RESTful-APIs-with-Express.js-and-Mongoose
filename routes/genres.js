@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
   const genres = await Genre.find().sort("name");
   res.send(genres);
 });
-
+//              middl      w he middleware
 router.post("/", auth, async (req, res) => {
   //check if we have token to access this resource..
   //but we dont want to repeat this logic at the begining of every route handler
