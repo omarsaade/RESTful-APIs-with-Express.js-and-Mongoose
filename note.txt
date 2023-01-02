@@ -149,3 +149,16 @@ authorization: if the user has permission to access a resource or not
 
 
 ============================================================
+
+video 139
+
+Logging Out a User
+
+u should not store token in database..but store on the client side
+like localhost..i u are sure u want to store in the database
+make sure to hash it , to encrypted
+
+
+cz i u store the jwt in database witouth hashing..anyone can get it and send it
+to the server..and do all the methd post....
+=====================================================

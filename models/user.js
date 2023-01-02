@@ -23,11 +23,15 @@ const userSchema = new mongoose.Schema({
     minlength: 5,
     maxlength: 1024,
   },
+  isAdmin: Boolean,
 });
 //userSchema.methods we can add additional key value pair to this object
 //so we can add a key generationAuthToken and a value..el function
 userSchema.methods.generateAuthToken = function () {
-  const token = jwt.sign({ _id: this._id }, config.get("jwtPrivateKey"));
+  const token = jwt.sign(
+    { _id: this._id, isAdmin: this.isAdmin },
+    config.get("jwtPrivateKey")
+  );
   return token;
 };
 
