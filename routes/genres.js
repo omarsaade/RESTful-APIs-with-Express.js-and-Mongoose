@@ -1,14 +1,32 @@
 const auth = require("../middleware/auth");
 const { Genre, validate } = require("../models/genre");
-const mongoose = require("mongoose");
 const express = require("express");
 const admin = require("../middleware/admin");
 const router = express.Router();
+
+// function asyncMiddleware(handler) {
+//   return async (req, res, next) => {
+//     try {
+//       await handler(req, res);
+//     } catch (ex) {
+//       next(ex);
+//     }
+//   };
+// }
+
+// router.get(
+//   "/",
+//   asyncMiddleware(async (req, res) => {
+//     const genres = await Genre.find().sort("name");
+//     res.send(genres);
+//   })
+// );
 
 router.get("/", async (req, res) => {
   const genres = await Genre.find().sort("name");
   res.send(genres);
 });
+
 //              middl      w he middleware
 router.post("/", auth, async (req, res) => {
   //check if we have token to access this resource..
@@ -44,7 +62,9 @@ router.put("/:id", auth, async (req, res) => {
 
   res.send(genre);
 });
-
+// LEZEM YKUN ADMIN AND AUTH LA YA3MUL DELETE
+// 2 IN 1               2 MIDDLE FUN     THE THIRD MIDDLE
+//  HOL EL MIDDLEW LI BEL ARRAY LAH YEN3AMLO IN SEQUENCE..WARA BAAD
 router.delete("/:id", [auth, admin], async (req, res) => {
   const genre = await Genre.findByIdAndRemove(req.params.id);
 

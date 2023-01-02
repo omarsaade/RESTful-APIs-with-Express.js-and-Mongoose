@@ -7,7 +7,7 @@ so we send our user and password to the server and the server authenticate us
 
 
 2-Authorization: is determining if the user has the right permission 
-to perform the giver operation
+to perform the given operation
 
 so in our vildy application we wanna make sure that only authenticated user or only logged in users
 can perform operations that modify data so if the user is anonymous 
@@ -35,7 +35,7 @@ we are gonna modidied the response of this api endpoint
 ================
 video 128
 sign up
-we store our password in a plein text..and that's verr very bad.
+we store our password in a plein text..and that's very very bad.
 
 so lets hash this password
 
@@ -162,3 +162,8 @@ make sure to hash it , to encrypted
 cz i u store the jwt in database witouth hashing..anyone can get it and send it
 to the server..and do all the methd post....
 =====================================================
+
+video 145
+
+Express Error middleware
+

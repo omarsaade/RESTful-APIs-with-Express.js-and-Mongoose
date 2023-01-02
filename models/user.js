@@ -26,8 +26,9 @@ const userSchema = new mongoose.Schema({
   isAdmin: Boolean,
 });
 //userSchema.methods we can add additional key value pair to this object
-//so we can add a key generationAuthToken and a value..el function
+//so we can add a key generationAuthToken and a value.. el function
 userSchema.methods.generateAuthToken = function () {
+  //   This is how we generate a json web token
   const token = jwt.sign(
     { _id: this._id, isAdmin: this.isAdmin },
     config.get("jwtPrivateKey")

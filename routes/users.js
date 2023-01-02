@@ -1,11 +1,8 @@
 // new route to register a new user
 const auth = require("../middleware/auth");
-const jwt = require("jsonwebtoken");
-const config = require("config");
 const bcrypt = require("bcrypt");
 const _ = require("lodash");
 const { User, validate } = require("../models/user");
-const mongoose = require("mongoose");
 const express = require("express");
 const router = express.Router();
 
@@ -38,7 +35,7 @@ router.post("/", async (req, res) => {
     });
 */
   await user.save();
-  // .pick() btraje3lna new object with those 2 props name and email
+  // .pick() btraje3lna new object with those 3 props name and email and id
   let pick = _.pick(user, ["_id", "name", "email"]);
   // we are gonna modified the response of this api endpoint to not returning
   //the password
