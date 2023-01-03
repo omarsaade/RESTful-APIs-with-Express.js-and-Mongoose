@@ -162,7 +162,14 @@ make sure to hash it , to encrypted
 cz i u store the jwt in database witouth hashing..anyone can get it and send it
 to the server..and do all the methd post....
 =====================================================
+video 144
 
+if we use async and await, we should use " try catch blocks"
+
+if we are using the promise syntax with "then" we should always call catch
+to handle exception
+
+============================
 video 145
 
 Express Error middleware

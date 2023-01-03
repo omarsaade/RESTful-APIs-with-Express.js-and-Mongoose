@@ -3,6 +3,7 @@
 //     try {
 //       await handler(req, res);
 //     } catch (ex) {
+// Log the exception
 //       next(ex);
 //     }
 //   };
