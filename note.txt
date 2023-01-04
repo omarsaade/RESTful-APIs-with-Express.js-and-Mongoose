@@ -174,3 +174,43 @@ video 145
 
 Express Error middleware
 
+================================================
+video 147
+
+// the best approach is to use the package and not the Code
+in async.js
+
+express async errors
+
+he bta3mul try catch la kell route handler men 5ilel ano ennazel
+el package bas..ktir shaglta hayne
+
+npm i express-async-errors
+
+==========================================================
+
+video 148
+
+Logging to MongoDB
+
+npm i winston-mongodb
+
+=======================================================
+const winston = require('winston');
+require('winston-mongodb');
+require('express-async-errors');
+
+module.exports = function() {
+  winston.handleExceptions(
+    new winston.transports.File({ filename: 'uncaughtExceptions.log' }));
+  
+  process.on('unhandledRejection', (ex) => {
+    throw ex;
+  });
+  
+  winston.add(winston.transports.File, { filename: 'logfile.log' });
+  winston.add(winston.transports.MongoDB, { 
+    db: 'mongodb://localhost/vidly',
+    level: 'info'
+  });  
+}

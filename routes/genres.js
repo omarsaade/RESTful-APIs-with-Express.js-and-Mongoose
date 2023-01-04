@@ -1,3 +1,4 @@
+// const asyncMiddleware = require("../middleware/async");
 const auth = require("../middleware/auth");
 const { Genre, validate } = require("../models/genre");
 const express = require("express");
