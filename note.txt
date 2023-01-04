@@ -214,3 +214,29 @@ module.exports = function() {
     level: 'info'
   });  
 }
+
+==========================================
+video 151
+
+unhandled promise rejection
+
+==============================================================
+video 154
+extracting the db logic
+======================================================================
+To log errors use winston. 
+- Winston can log errors in multiple transports. A transport is where your log is 
+stored. 
+- The core transports that come with Winston are Console, File and Http. There 
+are also 3rd-party transports for storing logs in MongoDB, CouchDB, Redis and 
+Loggly. 
+- The error middleware in Express only catches exceptions in the request 
+processing pipeline. Any errors happening during the application startup (eg 
+connecting to MongoDB) will be invisible to Express. 
+- Use process.on(‘uncaughtException’) to catch unhandled exceptions, and 
+process.on(‘unhandledRejection’) to catch rejected promises. 
+- As a best practice, in the event handlers you pass to process.on(), you should
+log the exception and exit the process, because your process may be in an 
+unclean state and it may result in more issues in the future. It’s better to restart 
+the process in a clean state. In production, you can use a process manager to 
+automatically restart a Node process. You’ll learn about that later in the course.
