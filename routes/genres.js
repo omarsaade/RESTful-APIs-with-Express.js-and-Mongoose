@@ -1,42 +1,17 @@
-// const asyncMiddleware = require("../middleware/async");
+const validateObjectId = require("../middleware/validateObjectId");
 const auth = require("../middleware/auth");
-const { Genre, validate } = require("../models/genre");
-const express = require("express");
 const admin = require("../middleware/admin");
+const { Genre, validate } = require("../models/genre");
+const mongoose = require("mongoose");
+const express = require("express");
 const router = express.Router();
-
-// function asyncMiddleware(handler) {
-//   return async (req, res, next) => {
-//     try {
-//       await handler(req, res);
-//     } catch (ex) {
-//       next(ex);
-//     }
-//   };
-// }
-
-// router.get(
-//   "/",
-//   asyncMiddleware(async (req, res) => {
-//     const genres = await Genre.find().sort("name");
-//     res.send(genres);
-//   })
-// );
 
 router.get("/", async (req, res) => {
   const genres = await Genre.find().sort("name");
   res.send(genres);
 });
 
-//              middl      w he middleware
 router.post("/", auth, async (req, res) => {
-  //check if we have token to access this resource..
-  //but we dont want to repeat this logic at the begining of every route handler
-  //that modifies data..so we need to put this logic in a middleware function
-
-  // const token = req.header("x-auth-token");
-  //res.status(401);
-
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -46,7 +21,7 @@ router.post("/", auth, async (req, res) => {
   res.send(genre);
 });
 
-router.put("/:id", auth, async (req, res) => {
+router.put("/:id", [auth, validateObjectId], async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -63,10 +38,8 @@ router.put("/:id", auth, async (req, res) => {
 
   res.send(genre);
 });
-// LEZEM YKUN ADMIN AND AUTH LA YA3MUL DELETE
-// 2 IN 1               2 MIDDLE FUN     THE THIRD MIDDLE
-//  HOL EL MIDDLEW LI BEL ARRAY LAH YEN3AMLO IN SEQUENCE..WARA BAAD
-router.delete("/:id", [auth, admin], async (req, res) => {
+
+router.delete("/:id", [auth, admin, validateObjectId], async (req, res) => {
   const genre = await Genre.findByIdAndRemove(req.params.id);
 
   if (!genre)
@@ -75,7 +48,7 @@ router.delete("/:id", [auth, admin], async (req, res) => {
   res.send(genre);
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", validateObjectId, async (req, res) => {
   const genre = await Genre.findById(req.params.id);
 
   if (!genre)

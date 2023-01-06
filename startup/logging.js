@@ -1,5 +1,5 @@
 const winston = require("winston");
-require("winston-mongodb");
+// require("winston-mongodb");
 require("express-async-errors");
 
 module.exports = function () {
@@ -57,10 +57,10 @@ will not executed
   // p.then(() => console.log("Done"));
 
   winston.add(winston.transports.File, { filename: "logfile.log" });
-  winston.add(winston.transports.MongoDB, {
-    db: "mongodb://localhost/vidly",
-    //ONLY ERROR MESSAGE WILL BE LOGGED
-    //IZA HATET LEVEL INFO..LAH YEN3AML LOG LA INFO W KELSHI ABLA (WARN ERROR)
-    level: "error",
-  });
+  // winston.add(winston.transports.MongoDB, {
+  //   db: "mongodb://localhost/vidly",
+  //   //ONLY ERROR MESSAGE WILL BE LOGGED
+  //   //IZA HATET LEVEL INFO..LAH YEN3AML LOG LA INFO W KELSHI ABLA (WARN ERROR)
+  //   level: "error",
+  // });
 };
