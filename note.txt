@@ -242,9 +242,15 @@ the process in a clean state. In production, you can use a process manager to
 automatically restart a Node process. You’ll learn about that later in the course.
 
 
-megamobile@1
 
 
 compression is used to compress the http response
 that we send to the client.
 
+
+=====================================================
+
+
+set vidly_jwtPrivateKey=1234
+
+set NODE_ENV=production
