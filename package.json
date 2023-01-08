@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll --verbose",
-    "start":"node index.js"
-
+    "start": "node index.js"
   },
-  "engines":{
-    "node":"16.18.0"
+  "engines": {
+    "node": "16.18.0"
   },
   "keywords": [],
   "author": "",

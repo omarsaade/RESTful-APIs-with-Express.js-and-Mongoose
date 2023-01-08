@@ -1,7 +1,7 @@
 // const logger = require("./config/logger");
 // require("express-async-errors");
 // const winston = require("winston");
-// require("winston-mongodb");
+require("winston-mongodb");
 // const error = require("./middleware/error");
 // const config = require("config");
 // const Joi = require("joi");
