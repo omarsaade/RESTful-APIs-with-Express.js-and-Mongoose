@@ -106,7 +106,8 @@ require("dotenv").config();
 // app.use("/api/users", users);
 // app.use("/api/auth", auth);
 // app.use(error);
-
+// console.log(process.env);
+console.log(process.env);
 const port = process.env.PORT || 3000;
 // app.listen(port, () => winston.info(`Listening on port ${port}...`));
 const server = app.listen(port, () =>
