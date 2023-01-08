@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --verbose",
-    "start": "node index.js"
+    "start": "set NODE_ENV=development&& nodemon index.js",
+    "start-prod":"set NODE_ENV=production&& nodemon index.js"
   },
   "engines": {
     "node": "16.18.0"
