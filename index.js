@@ -1,7 +1,6 @@
 // const logger = require("./config/logger");
 // require("express-async-errors");
 // const winston = require("winston");
-require("winston-mongodb");
 // const error = require("./middleware/error");
 // const config = require("config");
 // const Joi = require("joi");
@@ -14,8 +13,8 @@ require("winston-mongodb");
 // const users = require("./routes/users");
 // const auth = require("./routes/auth");
 // const winston = require("winston");
+require("winston-mongodb");
 const winston = require("winston");
-
 const express = require("express");
 const app = express();
 //we put the logging first
@@ -25,7 +24,6 @@ require("./startup/db")();
 require("./startup/config")();
 require("./startup/validation")();
 require("./startup/prod")(app);
-require("dotenv").config();
 // /*
 // process hye event emitter
 // this event is raised when we have an exception
@@ -107,7 +105,7 @@ require("dotenv").config();
 // app.use("/api/auth", auth);
 // app.use(error);
 // console.log(process.env);
-console.log(process.env);
+// console.log(process.env);
 const port = process.env.PORT || 3000;
 // app.listen(port, () => winston.info(`Listening on port ${port}...`));
 const server = app.listen(port, () =>
