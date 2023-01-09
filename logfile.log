@@ -487,3 +487,26 @@
 {"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-08T19:24:44.321Z"}
 {"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-08T19:24:48.863Z"}
 {"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-08T19:24:48.891Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T17:21:49.815Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T17:21:49.865Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T17:32:51.525Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T17:32:51.572Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T17:40:42.486Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T17:40:42.522Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T17:40:45.669Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T17:40:45.699Z"}
+{"message":"Unexpected number in JSON at position 40","stack":"SyntaxError: Unexpected number in JSON at position 40\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\10User\\Documents\\Authentication-and-Authorization\\node_modules\\body-parser\\lib\\types\\json.js:89:19)\n    at C:\\Users\\10User\\Documents\\Authentication-and-Authorization\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (C:\\Users\\10User\\Documents\\Authentication-and-Authorization\\node_modules\\raw-body\\index.js:231:16)\n    at done (C:\\Users\\10User\\Documents\\Authentication-and-Authorization\\node_modules\\raw-body\\index.js:220:7)\n    at IncomingMessage.onEnd (C:\\Users\\10User\\Documents\\Authentication-and-Authorization\\node_modules\\raw-body\\index.js:280:7)\n    at IncomingMessage.emit (node:events:525:35)\n    at endReadableNT (node:internal/streams/readable:1358:12)\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)","expose":true,"statusCode":400,"status":400,"body":"{\r\n    \"title\":\"lupano\",\r\n    \"genreId:\"63bc53128066352aa491bc98\",\r\n    \"numberInStock\":\"20\",\r\n    \"dailyRentalRate\":\"50\"\r\n}","type":"entity.parse.failed","level":"error","timestamp":"2023-01-09T17:50:05.617Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T17:58:28.168Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T17:58:28.219Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T18:03:30.810Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T18:03:30.857Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T18:06:29.540Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T18:06:29.568Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T18:11:21.530Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T18:11:21.560Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T18:11:31.281Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T18:11:31.315Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T18:32:15.597Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T18:32:15.632Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T18:32:19.200Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T18:32:19.235Z"}

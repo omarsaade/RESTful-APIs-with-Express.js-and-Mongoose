@@ -252,5 +252,4 @@ that we send to the client.
 
 
 set vidly_jwtPrivateKey=1234
-
 set NODE_ENV=production
