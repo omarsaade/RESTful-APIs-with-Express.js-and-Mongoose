@@ -4,10 +4,20 @@ const config = require("config");
 
 module.exports = function () {
   const db = config.get("db");
-  mongoose
-    .connect(config.get("db"))
-    .then(() => winston.info(`Connected to ${db}...`));
-  // .then(() => console.log("Connected to MongoDB..."))
+  mongoose.connect(
+    db,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    },
+    (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log("Successful");
+      }
+    }
+  );
 };
 
 // const winston = require("winston");

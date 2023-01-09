@@ -1,12 +1,12 @@
 const { Rental, validate } = require("../models/rental");
 const { Movie } = require("../models/movie");
 const { Customer } = require("../models/customer");
-const mongoose = require("mongoose");
-const Fawn = require("fawn");
+// const mongoose = require("mongoose");
+// const Fawn = require("fawn");
 const express = require("express");
 const router = express.Router();
 
-Fawn.init(mongoose);
+// Fawn.init(mongoose);
 
 router.get("/", async (req, res) => {
   const rentals = await Rental.find().sort("-dateOut");
@@ -14,6 +14,7 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
+  return res.status(400);
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -32,6 +33,7 @@ router.post("/", async (req, res) => {
       name: customer.name,
       phone: customer.phone,
     },
+
     movie: {
       _id: movie._id,
       title: movie.title,

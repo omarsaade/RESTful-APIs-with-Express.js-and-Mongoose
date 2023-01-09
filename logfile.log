@@ -512,3 +512,89 @@
 {"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T18:32:19.235Z"}
 {"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T18:32:40.220Z"}
 {"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T18:32:40.292Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T18:43:49.310Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T18:43:49.338Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T18:45:07.211Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T18:45:07.268Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T18:45:19.491Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T18:45:19.526Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:20:48.029Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omar@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:20:49.273Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:21:01.307Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omar@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:21:07.237Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:23:03.149Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omar@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:23:09.326Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:26:18.474Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omar@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:26:19.544Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:26:52.536Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omar@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:26:53.320Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:27:04.185Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omar@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:27:05.942Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:27:20.990Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-01-09T19:27:21.048Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:27:35.715Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omar@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:27:36.977Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:36:14.550Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:111fifantore@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:36:15.514Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:38:40.638Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omar@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:38:41.591Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:38:48.036Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaomar@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:38:48.860Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:38:52.332Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:38:53.134Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:39:09.008Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:111fifantore@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:39:09.794Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:39:22.537Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:39:23.348Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:40:54.251Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:41:00.445Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:41:07.519Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/ttt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:41:08.281Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:41:12.443Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:41:18.436Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:41:46.650Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:41:47.441Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:41:54.882Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:41:55.660Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:42:10.096Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:42:11.081Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:42:36.469Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:42:42.271Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:42:43.207Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:42:46.593Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromdar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:42:57.631Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:43:00.908Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:43:06.737Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:43:20.792Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:43:21.799Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:43:42.791Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:43:44.984Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:44:06.036Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromfar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:44:12.088Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:44:23.933Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:44:39.150Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:45:01.703Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:46:44.532Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:46:45.606Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:46:54.061Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:46:54.816Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:47:39.822Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:47:40.615Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T19:48:11.160Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T19:48:12.210Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T20:01:09.841Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T20:01:11.080Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T20:05:24.117Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T20:05:25.081Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T20:05:47.103Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T20:05:47.917Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T20:05:53.373Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T20:05:54.129Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T20:08:39.565Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T20:08:45.836Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T20:08:58.938Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T20:08:59.998Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T20:14:36.511Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T20:14:37.464Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2023-01-09T20:14:54.257Z"}
+{"level":"info","message":"Connected to mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/tt?retryWrites=true&w=majority...","timestamp":"2023-01-09T20:14:55.091Z"}
