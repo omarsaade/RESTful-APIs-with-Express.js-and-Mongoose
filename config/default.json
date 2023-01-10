@@ -2,3 +2,6 @@
     "jwtPrivateKey": "",
     "db":"mongodb+srv://omar:omaromar@cluster0.l9nezt7.mongodb.net/vidly?retryWrites=true&w=majority"
 }
+
+
+

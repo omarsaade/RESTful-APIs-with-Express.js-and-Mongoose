@@ -253,3 +253,20 @@ that we send to the client.
 
 set vidly_jwtPrivateKey=1234
 set NODE_ENV=production
+
+====================================
+
+shi bi sammia hik..shi bi sammia hik...
+
+el index.js = server.js
+
+==================================================
+
+https://www.section.io/engineering-education/nodejs-mongoosejs-mongodb/
+
+we use mongodb atlas
+
+================================
+STS>PROJECT0>DATABASES
+cluster0
+========================================================
